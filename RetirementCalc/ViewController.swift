@@ -7,16 +7,19 @@
 
 import UIKit
 import AppCenterCrashes
+import AppCenterAnalytics
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Analytics.trackEvent("App launched")
         // Do any additional setup after loading the view.
     }
 
     @IBAction func clickButton(_ sender: Any) {
-        Crashes.generateTestCrash()
+        Analytics.trackEvent("Button clicked")
+//        Crashes.generateTestCrash()
     }
     
 }
