@@ -1,3 +1,3 @@
 # CICDiOS
 
-https://build.appcenter.ms/v0.1/apps/a5af46a6-5015-495f-ac69-3ee86b1eccbe/branches/main/badge
+[![Build status](https://build.appcenter.ms/v0.1/apps/5125de1b-a2fa-4b8a-9e7f-5f59332e4f48/branches/main/badge)](https://appcenter.ms)
