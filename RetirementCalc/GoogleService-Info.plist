@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>65274045061-bbi4p8g75sq99ktlt83qtcahsp72gc0p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.65274045061-bbi4p8g75sq99ktlt83qtcahsp72gc0p</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDjMleeeZ9wJ94-U6RTvfo5xe6aEtJYRCE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>65274045061</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.raghavendraKulal.RetirementCalc</string>
+	<key>PROJECT_ID</key>
+	<string>retirementcalc-1a679</string>
+	<key>STORAGE_BUCKET</key>
+	<string>retirementcalc-1a679.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:65274045061:ios:f4863d8fcc5f4fa3e1ffec</string>
+</dict>
+</plist>

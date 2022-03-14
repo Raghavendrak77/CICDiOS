@@ -7,6 +7,8 @@ target 'RetirementCalc' do
 
   # Pods for RetirementCalc
     pod 'AppCenter'
+    pod 'FirebaseUI'
+    pod 'Firebase'
 
   target 'RetirementCalcTests' do
     inherit! :search_paths

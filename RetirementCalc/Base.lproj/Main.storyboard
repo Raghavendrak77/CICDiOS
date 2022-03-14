@@ -24,23 +24,66 @@
                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kfs-GA-uJ7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BwZ-8v-yXx">
+                                <rect key="frame" x="107" y="371" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="OPA-oF-TGf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUL-yD-bIU">
+                                <rect key="frame" x="107" y="323" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <connections>
+                                    <action selector="email:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kbd-rn-srH"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
+                            <constraint firstItem="BwZ-8v-yXx" firstAttribute="top" secondItem="tUL-yD-bIU" secondAttribute="bottom" constant="14" id="7IC-WK-PUw"/>
+                            <constraint firstItem="QOE-nC-Pwl" firstAttribute="centerX" secondItem="BwZ-8v-yXx" secondAttribute="centerX" id="7Iq-ho-dGB"/>
+                            <constraint firstItem="QOE-nC-Pwl" firstAttribute="top" secondItem="BwZ-8v-yXx" secondAttribute="bottom" constant="27.5" id="9l2-cd-It1"/>
                             <constraint firstItem="QOE-nC-Pwl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KNd-YF-Jq7"/>
+                            <constraint firstItem="tUL-yD-bIU" firstAttribute="centerX" secondItem="BwZ-8v-yXx" secondAttribute="centerX" id="b8a-6U-gcL"/>
+                            <constraint firstItem="tUL-yD-bIU" firstAttribute="width" secondItem="BwZ-8v-yXx" secondAttribute="width" id="hUJ-W2-5yK"/>
                             <constraint firstItem="QOE-nC-Pwl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q13-be-xGQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailout" destination="tUL-yD-bIU" id="O97-7e-I60"/>
+                        <outlet property="pass" destination="BwZ-8v-yXx" id="N2g-VB-CjB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="14" y="94"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="COp-f8-3d5">
+            <objects>
+                <viewController storyboardIdentifier="second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kJg-wC-f2O" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBy-e3-w6T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qsB-d2-To1"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YI6-6y-74h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="94"/>
+        </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

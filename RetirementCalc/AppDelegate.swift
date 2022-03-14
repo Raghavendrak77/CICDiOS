@@ -9,6 +9,10 @@ import UIKit
 import AppCenter
 import AppCenterCrashes
 import AppCenterAnalytics
+import FirebaseAuthUI
+import FirebaseAuth
+import FirebaseEmailAuthUI
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           Analytics.self,
           Crashes.self
         ])
+        FirebaseApp.configure()
         return true
     }
 
