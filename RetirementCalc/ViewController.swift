@@ -100,6 +100,7 @@ class ViewController: UIViewController,FUIAuthDelegate {
     
     @IBAction func clickButton(_ sender: Any) {
         Analytics.trackEvent("Button clicked")
+        print("just feature update")
 //        Crashes.generateTestCrash()
         signIn()
     }
