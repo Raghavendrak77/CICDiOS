@@ -81,7 +81,18 @@ class ViewController: UIViewController,FUIAuthDelegate {
               // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
             case .userDisabled: break
               // Error: The user account has been disabled by an administrator.
-            case .wrongPassword: break
+            case .wrongPassword:
+                let errorLabel = UILabel()
+                errorLabel.text = error.localizedDescription
+                errorLabel.numberOfLines = 0
+                errorLabel.translatesAutoresizingMaskIntoConstraints = false
+                self.view.addSubview(errorLabel)
+                
+                errorLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10).isActive = true
+                errorLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10).isActive = true
+                errorLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+                errorLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 30).isActive = true
+                
               // Error: The password is invalid or the user does not have a password.
             case .invalidEmail: break
               // Error: Indicates the email address is malformed.
